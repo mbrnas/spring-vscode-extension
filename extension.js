@@ -3,7 +3,7 @@ const vscode = require("vscode");
 /**
  * @param {vscode.ExtensionContext} context
  */
-async function activate(context) {
+function activate(context) {
   console.log('Congratulations, your extension "Spring Search" is now active!');
 
   console.log(
