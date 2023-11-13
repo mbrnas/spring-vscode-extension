@@ -1,0 +1,34 @@
+{
+    "Spring Controller": {
+        "prefix": "springcontroller",
+        "body": [
+            "@RestController",
+            "public class ${1:MyController} {",
+            "    @GetMapping(\"/${2:endpoint}\")",
+            "    public String ${3:methodName}() {",
+            "        return \"Hello, Spring!\";",
+            "    }",
+            "}"
+        ],
+        "description": "Create a new Spring controller"
+    },
+    "Spring Repository": {
+        "prefix": "springrepo",
+        "body": [
+            "@Repository",
+            "public interface ${1:MyRepository} extends JpaRepository<${2:Entity}, ${3:ID}> {",
+            "    // Custom repository methods",
+            "}"
+        ],
+        "description": "Create a new Spring Data repository"
+    },
+    "Spring Service": {
+        "prefix": "springservice",
+        "body": [
+            "@Service",
+            "public class ${1:Service} {",
+            
+            "}"
+        ]
+    }
+}

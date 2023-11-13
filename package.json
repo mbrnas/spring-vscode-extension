@@ -17,7 +17,11 @@
         "command": "spring-documentation-easy-search.springSearch",
         "title": "Spring Search"
       }
-    ]
+    ],
+    "snippets": [{
+      "language": "java",
+      "path": "./snippets.json"
+    }]
   },
   "scripts": {
     "lint": "eslint .",
