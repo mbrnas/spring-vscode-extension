@@ -30,5 +30,15 @@
             
             "}"
         ]
+    },
+    "Service Method": {
+        "prefix": "servicemethod",
+        "body": [
+            "public ${1:ReturnType} ${2:methodName}(${3:ParameterType} ${4:parameter}) {",
+            "    //TODO implement method",
+            "}"
+        ],
+        "description": "Create a new service method"
     }
+    
 }
