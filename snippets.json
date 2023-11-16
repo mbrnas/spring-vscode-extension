@@ -39,6 +39,18 @@
             "}"
         ],
         "description": "Create a new service method"
+    },
+    "Spring Exception": {
+        "prefix": "springexception",
+        "body": [
+            "@ResponseStatus(HttpStatus.${1:BAD_REQUEST})",
+            "public class ${2: MyException} extends RuntimeException {",
+            "    public ${2: MyException}(String message) {",
+            "        super(message);",
+            "    }",
+            "}"
+        ],
+        "description": "Create a new Spring exception class"
     }
     
 }
