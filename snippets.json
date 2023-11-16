@@ -51,6 +51,27 @@
             "}"
         ],
         "description": "Create a new Spring exception class"
+    },
+    "Spring DTO": {
+        "prefix": "springdto",
+        "body": [
+            "public class ${1:MyDTO} {",
+            "    private ${2:MyDataType} ${3:fieldName};",
+            "// add getters and setters",
+            "}"
+        ],
+        "description": "Create a new Data Transfer Object (DTO)"
+
+    },
+    "Spring Configuration": {
+        "prefix": "springconfig",
+        "body": [
+            "@Configuration",
+            "public class ${1:MyConfiguration} {",
+            "    //Add configuration beans and definitions",
+            "}"
+        ],
+        "description": "Create a new Spring Configuration class"
     }
     
 }
