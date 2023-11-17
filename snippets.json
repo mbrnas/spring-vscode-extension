@@ -12,12 +12,30 @@
         ],
         "description": "Create a new Spring controller"
     },
-    "Spring Repository": {
-        "prefix": "springrepo",
+    "Spring Jpa Repository": {
+        "prefix": "jparepo",
         "body": [
             "@Repository",
             "public interface ${1:MyRepository} extends JpaRepository<${2:Entity}, ${3:ID}> {",
             "    // Custom repository methods",
+            "}"
+        ],
+        "description": "Create a new Spring Data repository"
+    },
+    "Spring Crud Repository": {
+        "prefix": "crudrepo",
+        "body": [
+            "@Repository",
+            "public interface ${1:MyRepository} extends CrudRepository<${2:Entity}, ${3:ID}> {",
+            "    // Custom repository methods",
+            "}"
+        ],
+        "description": "Create a new Spring Data repository"
+    },
+    "Spring PagingAndSorting Repository": {
+        "prefix": "pagingrepo",
+        "body": [
+            "public interface ${1:MyRepository} extends PagingAndSortingRepository<${2:Entity}, ${3:ID}> {",
             "}"
         ],
         "description": "Create a new Spring Data repository"
@@ -27,15 +45,15 @@
         "body": [
             "@Service",
             "public class ${1:Service} {",
-            
             "}"
-        ]
+        ],
+        "description": "Create a new Spring Service"
     },
     "Service Method": {
         "prefix": "servicemethod",
         "body": [
             "public ${1:ReturnType} ${2:methodName}(${3:ParameterType} ${4:parameter}) {",
-            "    //TODO implement method",
+            "    // TODO: Implement method",
             "}"
         ],
         "description": "Create a new service method"
@@ -44,8 +62,8 @@
         "prefix": "springexception",
         "body": [
             "@ResponseStatus(HttpStatus.${1:BAD_REQUEST})",
-            "public class ${2: MyException} extends RuntimeException {",
-            "    public ${2: MyException}(String message) {",
+            "public class ${2:MyException} extends RuntimeException {",
+            "    public ${2:MyException}(String message) {",
             "        super(message);",
             "    }",
             "}"
@@ -57,21 +75,39 @@
         "body": [
             "public class ${1:MyDTO} {",
             "    private ${2:MyDataType} ${3:fieldName};",
-            "// add getters and setters",
+            "    // Add getters and setters",
             "}"
         ],
         "description": "Create a new Data Transfer Object (DTO)"
-
     },
     "Spring Configuration": {
         "prefix": "springconfig",
         "body": [
             "@Configuration",
             "public class ${1:MyConfiguration} {",
-            "    //Add configuration beans and definitions",
+            "    // Add configuration beans and definitions",
             "}"
         ],
         "description": "Create a new Spring Configuration class"
+    },
+    "Spring Entity": {
+        "prefix": "springentity",
+        "body": [
+            "@Entity",
+            "public class ${1:MyEntity} {",
+            "    @Id",
+            "    @GeneratedValue(strategy = GenerationType.IDENTITY)",
+            "    private Long id;",
+            "    // Custom fields",
+            "}"
+        ],
+        "description": "Create a new Spring model/entity class"
+    },
+    "Spring Application Properties": {
+        "prefix": "springprop",
+        "body": [
+            "${1:key}=${2:value}"
+        ],
+        "description": "Add a new property in Spring properties file"
     }
-    
 }
