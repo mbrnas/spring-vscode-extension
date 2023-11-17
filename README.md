@@ -31,3 +31,4 @@ This is the README file for the "SpringWing" extension. This extension is design
 | `springprop`       | Add a new property in Spring properties file | `${1:key}=${2:value}`          |
 
 ### Documentation Shortcut:
+To access the documentation, use the shortcut `Shift + Command + P` and then type `Spring Search`.
