@@ -1,65 +1,33 @@
-# spring-documentation-easy-search README
+# Spring Documentation Easy Search README
 
-This is the README for your extension "spring-documentation-easy-search". After writing up a brief description, we recommend including the following sections.
+This is the README file for the "SpringWing" extension. This extension is designed to provide developers with easy access to Spring and Spring Boot documentation, along with a suite of handy snippets for faster development.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### 1. Quick Access to Spring Documentation:
 
-For example if there is an image subfolder under your extension project workspace:
+- Directly access the Spring Framework documentation from VSCode.
+- Simplifies the process of referencing and learning Spring components.
 
-\!\[feature X\]\(images/feature-x.png\)
+### 2. Comprehensive Snippets Library:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- A variety of snippets for creating Spring components like Controllers, Services, Repositories, etc.
+- Enhance your productivity with pre-defined code templates.
 
-## Requirements
+### Snippets Usage:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+| Snippet Command    | Description                                  | Usage Example                  |
+| ------------------ | -------------------------------------------- | ------------------------------ |
+| `springcontroller` | Create a new Spring controller               | `@RestController` ...          |
+| `jparepo`          | Create a new Spring Data JPA repository      | `@Repository` ...              |
+| `crudrepo`         | Create a new Spring Data CRUD repository     | `@Repository` ...              |
+| `pagingrepo`       | Create a Spring Data Paging repository       | `public interface ...`         |
+| `springservice`    | Create a new Spring Service                  | `@Service` ...                 |
+| `servicemethod`    | Create a new service method                  | `public ReturnType methodName` |
+| `springexception`  | Create a new Spring exception class          | `@ResponseStatus` ...          |
+| `springdto`        | Create a new Data Transfer Object (DTO)      | `public class MyDTO` ...       |
+| `springconfig`     | Create a new Spring Configuration class      | `@Configuration` ...           |
+| `springentity`     | Create a new Spring entity class             | `@Entity` ...                  |
+| `springprop`       | Add a new property in Spring properties file | `${1:key}=${2:value}`          |
 
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+### Documentation Shortcut:

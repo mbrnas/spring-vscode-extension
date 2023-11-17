@@ -1,7 +1,9 @@
 {
   "name": "spring-documentation-easy-search",
-  "displayName": "Spring Documentation Easy Search",
-  "description": "Easy search for various Spring documentations online",
+  "displayName": "SpringWing",
+  "publisher": "MatijaBrnas",
+  "icon": "images/icon.png",
+  "description": "Easy search for various Spring documentations online, and Spring snippets",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.84.0"
@@ -9,7 +11,9 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:java"
+  ],
   "main": "./extension.js",
   "contributes": {
     "commands": [
