@@ -18,7 +18,6 @@ function activate(context) {
           "https://docs.spring.io/spring-framework/reference/index.html"
         )
       );
-
       vscode.window.showInformationMessage(
         "Opening Spring Framework documentation..."
       );
