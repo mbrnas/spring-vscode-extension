@@ -4,7 +4,7 @@
   "publisher": "MatijaBrnas",
   "icon": "images/icon.png",
   "description": "Easy search for various Spring documentations online, and Spring snippets",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.84.0"
   },
@@ -12,7 +12,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onLanguage:java"
+    "*"
   ],
   "main": "./extension.js",
   "contributes": {
@@ -20,7 +20,11 @@
       {
         "command": "spring-documentation-easy-search.springSearch",
         "title": "Spring Search"
-      }
+      },
+      {
+        "command": "spring-documentation-easy-search.createCustomClass",
+        "title": "Create Java Class File"
+    }
     ],
     "snippets": [{
       "language": "java",
