@@ -4,7 +4,7 @@
   "publisher": "MatijaBrnas",
   "icon": "images/icon.png",
   "description": "Easy search for various Spring documentations online, and Spring snippets",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.84.0"
   },
@@ -20,6 +20,22 @@
       {
         "command": "spring-documentation-easy-search.springSearch",
         "title": "Spring Search"
+      },
+      {
+        "command": "spring-documentation-easy-search.createEntityClass",
+        "title": "Create Java Entity Class"
+      },
+      {
+        "command": "spring-documentation-easy-search.createRepositoryInterface",
+        "title": "Create Repository Class"
+      },
+      {
+        "command": "spring-documentation-easy-search.createControllerClass",
+        "title": "Create Controller Class"
+      },
+      {
+       "command":"spring-documentation-easy-search.createServiceClass",
+       "title": "Create Service Class"
       }
     ],
     "snippets": [{
