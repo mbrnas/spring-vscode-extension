@@ -12,7 +12,7 @@
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "onLanguage:java"
   ],
   "main": "./extension.js",
   "contributes": {
@@ -22,9 +22,21 @@
         "title": "Spring Search"
       },
       {
-        "command": "spring-documentation-easy-search.createCustomClass",
-        "title": "Create Java Class File"
-    }
+        "command": "spring-documentation-easy-search.createEntityClass",
+        "title": "Create Java Entity Class"
+      },
+      {
+        "command": "spring-documentation-easy-search.createRepositoryInterface",
+        "title": "Create Repository Class"
+      },
+      {
+        "command": "spring-documentation-easy-search.createControllerClass",
+        "title": "Create Controller Class"
+      },
+      {
+       "command":"spring-documentation-easy-search.createServiceClass",
+       "title": "Create Service Class"
+      }
     ],
     "snippets": [{
       "language": "java",
