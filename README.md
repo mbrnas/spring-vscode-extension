@@ -1,20 +1,22 @@
 # Spring Documentation Easy Search README
 
-This is the README file for the "SpringWing" extension. This extension is designed to provide developers with easy access to Spring and Spring Boot documentation, along with a suite of handy snippets for faster development.
+This README file is for the "SpringWing" extension, a tool designed to streamline the development process for those working with Spring and Spring Boot. This extension provides seamless access to relevant documentation and includes a range of useful snippets for efficient coding.
 
 ## Features
 
 ### 1. Quick Access to Spring Documentation:
 
-- Directly access the Spring Framework documentation from VSCode.
-- Simplifies the process of referencing and learning Spring components.
+- **Direct Access**: Open the Spring Framework documentation directly from VSCode.
+- **Ease of Learning**: Simplify the referencing and learning process for Spring components.
 
 ### 2. Comprehensive Snippets Library:
 
-- A variety of snippets for creating Spring components like Controllers, Services, Repositories, etc.
-- Enhance your productivity with pre-defined code templates.
+- **Wide Range of Snippets**: Snippets for creating various Spring components such as Controllers, Services, Repositories, and more.
+- **Boost Productivity**: Pre-defined code templates to speed up your development workflow.
 
 ### Snippets Usage:
+
+The table below summarizes the available snippets and their usage:
 
 | Snippet Command    | Description                                  | Usage Example                  |
 | ------------------ | -------------------------------------------- | ------------------------------ |
@@ -30,5 +32,15 @@ This is the README file for the "SpringWing" extension. This extension is design
 | `springentity`     | Create a new Spring entity class             | `@Entity` ...                  |
 | `springprop`       | Add a new property in Spring properties file | `${1:key}=${2:value}`          |
 
+### Custom File Creation Commands:
+
+These commands facilitate the creation of specific Java files for your Spring project:
+
+- **Create Entity Class**: Command `spring-documentation-easy-search.createEntityClass` creates a new entity class with basic annotations.
+- **Create Repository Interface**: Command `spring-documentation-easy-search.createRepositoryInterface` sets up a new repository interface extending `JpaRepository`.
+- **Create Controller Class**: Command `spring-documentation-easy-search.createControllerClass` for initializing a new controller class.
+- **Create Service Class**: Command `spring-documentation-easy-search.createServiceClass` allows for the quick creation of a service class.
+
 ### Documentation Shortcut:
+
 To access the documentation, use the shortcut `Shift + Command + P` and then type `Spring Search`.
