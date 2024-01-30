@@ -3,8 +3,9 @@
   "displayName": "SpringWing",
   "publisher": "MatijaBrnas",
   "icon": "images/icon.png",
+  "repository": "https://github.com/mbrnas/spring-vscode-extension",
   "description": "Easy search for various Spring documentations online, and Spring snippets",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.84.0"
   },
