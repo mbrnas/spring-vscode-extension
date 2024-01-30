@@ -36,10 +36,10 @@ The table below summarizes the available snippets and their usage:
 
 These commands facilitate the creation of specific Java files for your Spring project:
 
-- **Create Entity Class**: Command `spring-documentation-easy-search.createEntityClass` creates a new entity class with basic annotations.
-- **Create Repository Interface**: Command `spring-documentation-easy-search.createRepositoryInterface` sets up a new repository interface extending `JpaRepository`.
-- **Create Controller Class**: Command `spring-documentation-easy-search.createControllerClass` for initializing a new controller class.
-- **Create Service Class**: Command `spring-documentation-easy-search.createServiceClass` allows for the quick creation of a service class.
+- **Create Entity Class**: Command `Create Entity Class` creates a new entity class with basic annotations.
+- **Create Repository Interface**: Command `Create Repository Interface` sets up a new repository interface extending `JpaRepository`.
+- **Create Controller Class**: Command `Create Controller Class` for initializing a new controller class.
+- **Create Service Class**: Command `Create Service Class` allows for the quick creation of a service class.
 
 ### Documentation Shortcut:
 
